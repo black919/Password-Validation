@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weryfikacja hasła</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="icon" type="image/png" href="./icon.png">
+
+    <link href="https://fonts.googleapis.com/css?family=Aleo|Slabo+27px" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Weryfikacja hasła</h2>
+        <input type="password" id="password" placeholder="Wpisz hasło" onInput="check()" />
+        <br>
+        <div id="set">
+            <div id="count">Długość : 0</div>
+            <i id="see" onclick="see()" class="far fa-eye"></i>
+        </div>
+        <div id="check0">
+            <i class="far fa-check-circle"></i> <span>Większy niż 5 znaków.</span>
+        </div>
+        <div id="check1">
+            <i class="far fa-check-circle"></i> <span>Mniejszy niż 25 znaków</span>
+        </div>
+        <div id="check2">
+            <i class="far fa-check-circle"></i> <span>Musi posiadać numer.</span>
+        </div>
+        <div id="check3">
+            <i class="far fa-check-circle"></i> <span>Musi posiadać specjalny znak.</span>
+        </div>
+        <div id="check4">
+            <i class="far fa-check-circle"></i> <span>Nie może mieć spacji.</span>
+        </div>
+    </div>
+</body>
+
+</html>
